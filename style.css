@@ -11,16 +11,16 @@
 
 header { 
   grid-area: header;
-  background-color:beige;
+  background-color:beige;  
 }
 main { 
   grid-area: main;
-  background-color:antiquewhite;
+  background-color:white;
 }
 
 footer { 
   grid-area: footer;
-  background-color:aquamarine;
+  background-color: #70d0ec;
 }
 
 /* Navigation
@@ -69,4 +69,27 @@ button:hover {
   color: white;
 }
 
+/* Impacts Page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.row {
+  display: flex;
+}
 
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 70px;
+}
+/* Resize
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (max-width: 460px) {
+  .second-grid-container{
+    display: block;
+  }
+  header,
+  main,
+  footer{
+    width: 100%;
+    min-height: 200px;
+  }
+}
