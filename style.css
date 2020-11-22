@@ -11,15 +11,21 @@
 
 header { 
   grid-area: header;
-  background-color:beige;  
+  background-color:blueviolet;  
 }
 main { 
   grid-area: main;
   background-color:white;
   font-size: 14px;
-  font-family: "Open Sans";
   line-height: 1.5;
+  font-family: "Open Sans";
 }
+
+h1 {
+  text-align: center;
+  font-family: "Open Sans";
+}
+
 h2 {
   display: block;
   font-size: 1.5em;
@@ -27,7 +33,7 @@ h2 {
   margin-block-end: 0.83em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-    ont-weight: bold;
+  font-weight: bold;
 }
 
 footer { 
@@ -59,6 +65,7 @@ ul li{
 a {
   text-decoration: none;
   padding: 9.75px 13px;
+  color: white;
 }
 button {
   background-color: #70d0ec; 
@@ -90,7 +97,7 @@ button:hover {
 .column {
   float: left;
   width: 33.33%;
-  padding: 70px;
+  padding: 50px 70px 20px 70px;
 }
 
 .row::after {
