@@ -1,7 +1,7 @@
 .second-grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 250px 550px 200px;
+  grid-template-rows: 250px 600px 150px;
   gap: 0px 0px;
   grid-template-areas:
     "header"
@@ -16,6 +16,18 @@ header {
 main { 
   grid-area: main;
   background-color:white;
+  font-size: 14px;
+  font-family: "Open Sans";
+  line-height: 1.5;
+}
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.2em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+    ont-weight: bold;
 }
 
 footer { 
@@ -71,14 +83,20 @@ button:hover {
 
 /* Impacts Page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.row {
-  display: flex;
+/*https://www.w3schools.com/howto/howto_css_images_side_by_side.asp (referred to this code) */
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 70px;
 }
 
-/* Create three equal columns that sits next to each other */
-.column {
-  flex: 33.33%;
-  padding: 70px;
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 /* Resize
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -91,5 +109,8 @@ button:hover {
   footer{
     width: 100%;
     min-height: 200px;
+  }
+  .column {
+    width: 100%;
   }
 }
