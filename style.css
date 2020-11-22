@@ -1,0 +1,22 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 250px 400px 200px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+header { grid-area: header;
+  background-color:aqua;
+}
+
+main { grid-area: main;
+  background-color:blanchedalmond;
+}
+
+footer { grid-area: footer;
+  background-color:aquamarine;
+}
