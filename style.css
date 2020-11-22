@@ -1,7 +1,7 @@
-.grid-container {
+.second-grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 250px 400px 200px;
+  grid-template-rows: 250px 550px 200px;
   gap: 0px 0px;
   grid-template-areas:
     "header"
@@ -9,14 +9,64 @@
     "footer";
 }
 
-header { grid-area: header;
-  background-color:aqua;
+header { 
+  grid-area: header;
+  background-color:beige;
 }
-
-main { grid-area: main;
+main { 
+  grid-area: main;
   background-color:antiquewhite;
 }
 
-footer { grid-area: footer;
+footer { 
+  grid-area: footer;
   background-color:aquamarine;
 }
+
+/* Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* https://codepen.io/wajahat/pen/ORXvop (referred to this code for the nav bar) */
+.nav-container{ 
+  clear: both;
+  overflow: auto;
+  padding: 15px 10px;
+  background-color: transparent;
+}
+nav{
+  float: right;
+}
+.logo{
+  float: left;
+}
+ul li{ 
+  display: inline-block;
+  font-size: 13px;
+  font-family: "Open Sans";
+  letter-spacing: 1px;
+}
+a {
+  text-decoration: none;
+  padding: 9.75px 13px;
+}
+button {
+  background-color: #70d0ec; 
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  margin-left: 1em;
+  padding: 1em 1.5em !important;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 2px;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  opacity: 0.8;
+  color: white;
+}
+
+
