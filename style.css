@@ -12,6 +12,9 @@
 header { 
   grid-area: header;
   background-color:blueviolet;  
+  background: url(img/impacts1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 main { 
   grid-area: main;
@@ -24,6 +27,7 @@ main {
 h1 {
   text-align: center;
   font-family: "Open Sans";
+  color: white;
 }
 
 h2 {
@@ -34,6 +38,7 @@ h2 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 
 footer { 
@@ -47,7 +52,7 @@ footer {
 .nav-container{ 
   clear: both;
   overflow: auto;
-  padding: 15px 10px;
+  padding: 15px 20px 15px 10px;
   background-color: transparent;
 }
 nav{
@@ -74,7 +79,7 @@ button {
   font-weight: 500;
   font-size: 12px;
   margin-left: 1em;
-  padding: 1em 1.5em !important;
+  padding: 1.1em 1.5em !important;
   text-align: center;
   text-decoration: none;
   letter-spacing: 2px;
@@ -97,7 +102,7 @@ button:hover {
 .column {
   float: left;
   width: 33.33%;
-  padding: 50px 70px 20px 70px;
+  padding: 50px 70px 15px 70px;
 }
 
 .row::after {
