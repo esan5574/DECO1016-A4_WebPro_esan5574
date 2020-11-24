@@ -1,7 +1,7 @@
 .second-grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 250px 600px 150px;
+  grid-template-rows: 250px 600px 200px;
   gap: 0px 0px;
   grid-template-areas:
     "header"
@@ -43,6 +43,42 @@ h2 {
 footer { 
   grid-area: footer;
   background-color: #70d0ec;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  color: white;
+  font-family: "Open Sans"
+}
+.footer_outer{
+  width: 980px;
+}
+
+.footer_inner_left{
+  width: 49%;
+  float: left;
+  display: inline;
+}
+
+.footer_inner_right{
+  width: 49%;
+  float: right;
+  display:inline;
+}
+/* Footer Icons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.fa {
+  padding: 10px;
+  font-size: 10px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.fa:hover {
+  opacity: 0.7;
 }
 
 /* Navigation
@@ -137,6 +173,40 @@ button:hover {
   clear: both;
   display: table;
 }
+
+/* Projects Page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.tab { 
+  height: 600px;
+  float: left;
+  background-color: #f1f1f1;
+  width: 20%
+}
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 2em 1.5em !important;
+  margin: 0px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.tab button:hover {
+  background-color: #84d2e8;
+}
+.tab button.active {
+  background-color: #70d0ec;
+}
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 80%;
+  border-left: none;
+  height: 600px;
+}
+
 /* Responsive
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 800px) {

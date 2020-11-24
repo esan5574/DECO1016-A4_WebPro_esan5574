@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Projects - 100% hOPE</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" href="img/100.png" type="logo" sizes="16x16">
+	<link rel="icon" href="img/100.png" type="logo" sizes="16x16">
 </head>
 
 <body>
@@ -33,7 +33,35 @@
     </header>
 		
     <main>
-     
+      <!--https://www.w3schools.com/howto/howto_js_vertical_tabs.asp (referred to this code for the vertical tab)-->
+      <div class="tab">
+       <button class="tablinks" onclick="openProject(event, 'Village')" id="defaultOpen">HOPE VILLAGE</button>
+       <button class="tablinks" onclick="openProject(event, 'School')">HOPE SCHOOL</button>
+       <button class="tablinks" onclick="openProject(event, 'Homes')">CHILDREN'S HOMES</button>
+       <button class="tablinks" onclick="openProject(event, 'SS')">SELF SUSTAINABILITY</button>
+       <button class="tablinks" onclick="openProject(event, 'Staff')">HOPE STAFF</button>
+      </div>
+
+      <div id="Village" class="tabcontent">
+        <h3>Hope Village</h3>
+      </div>
+
+      <div id="School" class="tabcontent">
+        <h3>Hope School</h3>
+      </div>
+
+      <div id="Homes" class="tabcontent">
+        <h3>Children's Homes</h3>
+      </div>
+
+      <div id="SS" class="tabcontent">
+        <h3>Self Sustainability</h3>
+      </div>
+
+      <div id="Staff" class="tabcontent">
+        <h3>Hope Staff</h3>
+      </div>
+
     </main>
 		
     <footer></footer>
