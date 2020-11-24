@@ -63,7 +63,7 @@ h2 {
 }
 .navbar-links ul { 
   display: flex;
-  margin: 0;
+  margin: 10px;
   padding: 10px;
   font-size: 13px;
   font-family: "Open Sans";
@@ -93,12 +93,10 @@ button {
   cursor: pointer;
   outline: none;
 }
-
 button:hover {
   opacity: 0.8;
   color: white;
 }
-
 .toggle-button {
   position: absolute;
   top: .75rem;    
@@ -109,7 +107,6 @@ button:hover {
   width: 30px;
   height: 21px;
 }
-
 .toggle-button .bar {
   height: 3px;
   width: 100%;
@@ -128,7 +125,6 @@ button:hover {
   width: 33.33%;
   padding: 50px 70px 15px 70px;
 }
-
 .row::after {
   content: "";
   clear: both;
@@ -136,6 +132,7 @@ button:hover {
 }
 
 /* Projects Page
+https://www.w3schools.com/howto/howto_js_vertical_tabs.asp (referred to this code for the vertical tab)
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .tab { 
   height: 300px;
@@ -168,7 +165,6 @@ button:hover {
   height: 600px;
 }
 .container {
-	/*border: 3px solid blue;*/
 	padding: 20px 40px 40px;
 	width: 100%;
 }
@@ -183,8 +179,22 @@ button:hover {
 	display: inline-block;
 	width: 46%;
 }
+.container-text button {
+  background-color: #70d0ec; 
+  border: none;
+  color: white;
+  margin: 10px 0px 10px 0px;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 1.2em 3.5em !important;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 2px;
+  cursor: pointer;
+  outline: none;
+}
 
-/*Scroll back up 
+/* Scroll back up 
 https://www.w3schools.com/howto/howto_js_scroll_to_top.asp (referred to this tutorial on how to code the scroll up button)
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #myBtn {
@@ -293,6 +303,9 @@ footer {
   }
   .container-text {
     width: 100%;
+  }
+  .container-text button {
+    width: 100%
   }
 
 }
