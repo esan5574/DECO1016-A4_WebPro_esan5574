@@ -177,7 +177,7 @@ button:hover {
 /* Projects Page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .tab { 
-  height: 600px;
+  height: 300px;
   float: left;
   background-color: #f1f1f1;
   width: 20%
@@ -242,6 +242,12 @@ button:hover {
   }
   .navbar-links.active {
     display: flex;
+  }
+  .tab {
+    width: 100%;
+  }
+  .tabcontent {
+    width: 100%;
   }
 
 }
