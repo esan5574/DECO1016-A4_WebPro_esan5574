@@ -27,6 +27,7 @@ h1 {
   font-family: "Open Sans";
   color: white;
   letter-spacing: 2px;
+  padding: 20px;
 }
 h2 {
   display: block;
@@ -194,6 +195,7 @@ https://www.tutorialrepublic.com/codelab.php?topic=faq&file=jquery-show-hide-div
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #headingselect{
   text-align: center;
+  padding: 20px;
 }
 #headingselect select,
   #headingselect h1 {
