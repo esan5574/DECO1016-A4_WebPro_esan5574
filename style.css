@@ -200,20 +200,35 @@ https://www.tutorialrepublic.com/codelab.php?topic=faq&file=jquery-show-hide-div
     display: inline;
     vertical-align: middle;
   }
+#headingselect select{
+  border: 3px solid #70d0ec;
+  outline: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Open Sans"
+  
+}
 .box{
-  color: #fff;
+  color: white;
   padding: 20px;
   display: none;
   margin-top: 20px;
 }
-.red{ 
+.village{ 
   background: #ff0000;
 }
-.green{ 
+.school{ 
   background: #228B22; 
 }
-.blue{ 
+.home{ 
   background: #0000ff; 
+}
+.ss{ 
+  background: orange; 
+}
+.staff{ 
+  background: purple; 
 }
 
 /* Scroll back up 
