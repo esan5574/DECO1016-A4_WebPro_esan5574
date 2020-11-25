@@ -189,6 +189,32 @@ https://www.w3schools.com/howto/howto_js_vertical_tabs.asp (referred to this cod
   cursor: pointer;
   outline: none;
 }
+/* Make a Difference Page
+https://www.tutorialrepublic.com/codelab.php?topic=faq&file=jquery-show-hide-div-using-select-box (I referred to this code on how to have the select tag show different content based on the selected option)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#headingselect{
+  text-align: center;
+}
+#headingselect select,
+  #headingselect h1 {
+    display: inline;
+    vertical-align: middle;
+  }
+.box{
+  color: #fff;
+  padding: 20px;
+  display: none;
+  margin-top: 20px;
+}
+.red{ 
+  background: #ff0000;
+}
+.green{ 
+  background: #228B22; 
+}
+.blue{ 
+  background: #0000ff; 
+}
 
 /* Scroll back up 
 https://www.w3schools.com/howto/howto_js_scroll_to_top.asp (referred to this tutorial on how to code the scroll up button)

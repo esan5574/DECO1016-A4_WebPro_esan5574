@@ -20,6 +20,21 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+// Make a Difference SELECT PROJECT
+//https://www.tutorialrepublic.com/codelab.php?topic=faq&file=jquery-show-hide-div-using-select-box (I referred to this code on how to have the select tag show different content based on the selected option)
+$(document).ready(function(){
+    $("select").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".box").not("." + optionValue).hide();
+                $("." + optionValue).show();
+            } else{
+                $(".box").hide();
+            }
+        });
+    }).change();
+});
 // Projects page - vertical tabs
 function openProject(evt, projectName) {
   var i, tabcontent, tablinks;
