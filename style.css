@@ -3,7 +3,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 250px 600px 140px;
   gap: 0px 0px;
-  grid-template-areas:
+  grid-template-areas: 
     "header"
     "main"
     "footer";
@@ -216,10 +216,16 @@ https://www.tutorialrepublic.com/codelab.php?topic=faq&file=jquery-show-hide-div
   width: 100%;
   height: 600px;
 }
-.container-dono {
-  color: black;
+.dono-image {
 	display: inline-block;
-	width: 46%;
+	vertical-align: top;
+	width: 50%;
+	margin: 20px 30px 0px 0px;
+}
+.dono-text {
+	display: inline-block;
+	width: 23%;
+  color: black;
 }
 .mad-button {
   border: none;
@@ -253,16 +259,11 @@ span .dono-price, .dono-description {
   text-align: left;
   width: 70%
 }
-.dono-image {
-	display: inline-block;
-	vertical-align: top;
-	width: 50%;
-	margin: 20px 30px 0px 0px;
+form{
+  text-align: center;
 }
-.dono-text {
-	display: inline-block;
-	width: 46%;
-  color: black;
+.radio-inline{
+  padding: 0px 20px;
 }
 
 /* Scroll back up 
