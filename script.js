@@ -5,6 +5,7 @@ const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 })
+
 // Scroll back up button
 mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
@@ -20,11 +21,12 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 };
+
 // Make a Difference SELECT PROJECT
 //https://www.tutorialrepublic.com/codelab.php?topic=faq&file=jquery-show-hide-div-using-select-box (I referred to this code on how to have the select tag show different content based on the selected option)
-$(document).ready(function(){
-    $("select").change(function(){
-        $(this).find("option:selected").each(function(){
+$(document).ready(function selectProject(){
+    $("select").change(function selectProject(){
+        $(this).find("option:selected").each(function selectProject(){
             var optionValue = $(this).attr("value");
             if(optionValue){
                 $(".box").not("." + optionValue).hide();
@@ -51,3 +53,4 @@ function openProject(evt, projectName) {
   evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
+
