@@ -8,7 +8,6 @@
     "main"
     "footer";
 }
-
 header { 
   grid-area: header;
   background: url(img/impacts1.png);
@@ -259,13 +258,44 @@ span .dono-price, .dono-description {
   text-align: left;
   width: 70%
 }
+.dollar{
+	text-align: center;
+	position: relative;
+	}
+.dollar input{
+	padding-left:20px;
+  height: 30px;
+  width: 130px;
+  border: 3px solid #ea0876;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+	}
+.dollar:before {
+	position: absolute;
+  content:"$";
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 700;
+  left:100px;
+  top: -5px;
+ 	}
+.dollar input:focus{
+  border: 3px solid #70d0ec;
+}
 form{
   text-align: center;
+  padding: 5px
 }
 .radio-inline{
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
-
+.mad-btn{
+  text-align: center;
+}
+.mad-dono-btn{
+  background: #70d0ec;
+}
 /* Scroll back up 
 https://www.w3schools.com/howto/howto_js_scroll_to_top.asp (referred to this tutorial on how to code the scroll up button)
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -353,10 +383,14 @@ footer {
     display: block;
   }
   header,
-  main,
   footer{
     width: 100%;
     min-height: 200px;
+    flex-wrap: wrap;
+  }
+  main{
+    width: 100%;
+    min-height: 500px;
     flex-wrap: wrap;
   }
   .column {
