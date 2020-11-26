@@ -209,28 +209,60 @@ https://www.tutorialrepublic.com/codelab.php?topic=faq&file=jquery-show-hide-div
   text-transform: uppercase;
   font-weight: bold;
   font-family: "Open Sans"
-  
 }
 .box{
   color: white;
   padding: 20px;
-  display: none;
-  margin-top: 20px;
+  width: 100%;
+  height: 600px;
 }
-.village{ 
-  background: #ff0000;
+.container-dono {
+  color: black;
+	display: inline-block;
+	width: 46%;
 }
-.school{ 
-  background: #228B22; 
+.mad-button {
+  border: none;
+  height: 60px;
+  width: 300px;
+  background: #ea0876;
+  color: white;
+  margin: 10px;
+  outline: none;
+  display: block;
+ }
+.mad-button:focus{
+  background: #70d0ec;
 }
-.home{ 
-  background: #0000ff; 
+span .dono-price, .dono-description {
+  display: inline-block;
 }
-.ss{ 
-  background: orange; 
+.dono-price {
+  text-align: center;
+  flex-basis: 3.85em;
+  font-weight: 900;
+  font-size: 2em;
+  padding-right: 0;
+  width: 25%;
 }
-.staff{ 
-  background: purple; 
+.dono-description {
+  color: white;
+  cursor: pointer;
+  font-weight: 100;
+  padding-left: 5px;
+  text-align: left;
+  width: 70%
+}
+.dono-image {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	margin: 20px 30px 0px 0px;
+}
+.dono-text {
+	display: inline-block;
+	width: 46%;
+  color: black;
 }
 
 /* Scroll back up 
@@ -364,5 +396,11 @@ footer {
   }
   .container-text button {
     width: 100%
+  }
+  .dono-image {
+    width: 100%;
+  }
+  .dono-text {
+    width: 100%;
   }
 }
