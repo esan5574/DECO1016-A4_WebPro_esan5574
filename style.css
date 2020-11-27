@@ -117,7 +117,7 @@ button:hover {
 }
 /* HOME PAGE */
 .hero{
-  padding: 30px 200px;
+  padding: 10px 200px;
   width: 100%;
 }
 .hero-image{
@@ -140,17 +140,18 @@ button:hover {
   background: #70d0ec;
   margin: 10px;
 }
-.notice {
+.notice-board{
   /*background: green;*/
   display: flex;
-  padding: 20px 40px;
+  padding: 10px 40px;
   justify-content: center;
 }
-.notice h1{
+.notice-board h1{
   color: #ea0876;
+  font-size: 22px;
   text-align: left;
 }
-.notice p{
+.notice-board p{
   padding: 0px 10px;
 }
 .left-help{
@@ -161,8 +162,43 @@ button:hover {
 .right-project{
   height: 200px;
   width: 600px;
-  background: purple;
+  background: #f3f3f3;
+  text-align: center;
 }
+/* HOME - Donation Progress Bar 
+https://codepen.io/hushangni/pen/owoqWJ (referred to this code on how to code a progress bar*/
+  #progress {
+    width: 40%; 
+    float: left;
+    border-radius: 6px;
+    height: 20px;
+    background: #36B8E9; 
+  }
+  #countdown-wrap {
+    width: 120%;
+    height: 70px;
+    font-family: "Open Sans";
+    font-weight: 500;
+    padding: 0px 30px;
+  }
+  #goal {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: right;
+    width:80%;
+  }
+  #glass {
+    width: 80%;
+    height: 15px;
+    border-radius: 6px;
+    float: left;
+    overflow: hidden;
+    background-color: #dee0e0;
+    box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+  }
+  .project-button{
+    background: #70d0ec;
+  }
 
 /* Impacts Page
 –––––––––––––––––––––––––––––––––––––––––––––––––
@@ -259,6 +295,8 @@ https://www.tutorialrepublic.com/codelab.php?topic=faq&file=jquery-show-hide-div
   font-weight: bold;
   font-family: "Open Sans"
 }
+/* Make a Difference Page - Dono buttons
+*/
 .box{
   color: white;
   padding: 20px;
@@ -432,15 +470,10 @@ footer {
   .second-grid-container{
     display: block;
   }
-  header,
+  header, main,
   footer{
     width: 100%;
     min-height: 200px;
-    flex-wrap: wrap;
-  }
-  main{
-    width: 100%;
-    min-height: 500px;
     flex-wrap: wrap;
   }
   .column {
@@ -467,9 +500,18 @@ footer {
   .navbar-links.active {
     display: flex;
   }
-  .notice {
+  .hero-image {
+    width: 100%;
+  }
+  .hero-text {
+    width: 100%
+  }
+  .notice-board {
     flex-wrap: wrap;
   }
+  .tab {
+    width: 100%;
+  }  
   .tabcontent {
     width: 100%;
   }
@@ -488,10 +530,5 @@ footer {
   .dono-text {
     width: 100%;
   }
-  .hero-image{
-    width: 100%;
-  }
-  .hero-text {
-  width: 100%
-    }
+
 }
