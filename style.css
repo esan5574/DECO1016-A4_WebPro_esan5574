@@ -117,8 +117,9 @@ button:hover {
 }
 /* HOME PAGE */
 .hero{
-  padding: 10px 200px;
+  padding: 10px 100px;
   width: 100%;
+  display: flex;
 }
 .hero-image{
   display: inline-block;
@@ -141,7 +142,6 @@ button:hover {
   margin: 10px;
 }
 .notice-board{
-  /*background: green;*/
   display: flex;
   padding: 10px 40px;
   justify-content: center;
@@ -384,6 +384,7 @@ form{
 .mad-dono-btn{
   background: #70d0ec;
 }
+
 /* Scroll back up 
 https://www.w3schools.com/howto/howto_js_scroll_to_top.asp (referred to this tutorial on how to code the scroll up button)
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -499,6 +500,9 @@ footer {
   }
   .navbar-links.active {
     display: flex;
+  }
+  .hero{
+    flex-direction: column;
   }
   .hero-image {
     width: 100%;
